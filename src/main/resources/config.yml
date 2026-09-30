@@ -1,0 +1,34 @@
+# SetHome - chizzar-dev
+# max-homes = oyuncu basina ev limiti. sethome.unlimited yetkisi olanlar sinirsizdir.
+# warmup = isinlanma bekleme suresi (saniye). 0 = aninda.
+# cancel-on-move = beklerken hareket edince iptal.
+
+max-homes: 3
+default-home: "home"
+
+warmup: 5
+cancel-on-move: true
+
+# geri sayim gosterimi. type: ACTIONBAR (kucuk) veya TITLE (ekran ortasi). %time% = kalan saniye
+countdown:
+  type: ACTIONBAR
+  message: "&8» &eIsinlaniyor  &f&l%time%  &7saniye  &8«"
+  title: "&b&l%time%"
+  subtitle: "&7Evine isinlaniyorsun..."
+
+messages:
+  players-only: "&cBu komutu sadece oyuncular kullanabilir."
+  no-permission: "&cBunun icin yetkin yok."
+  usage-set: "&7/sethome [isim]"
+  usage-del: "&7/delhome [isim]"
+  invalid-name: "&cGecersiz ev ismi. Sadece harf, rakam, - ve _ kullan."
+  limit-reached: "&cEv limitine ulastin (&e%max%&c). Once bir ev sil: &e/delhome <isim>"
+  set: "&a'%home%' evi kaydedildi."
+  overwritten: "&a'%home%' evi guncellendi."
+  home-not-found: "&c'%home%' adinda bir evin yok."
+  deleted: "&7'%home%' evi silindi."
+  list: "&7Evlerin: &f%homes%"
+  no-homes: "&cHic evin yok. &7/sethome [isim]"
+  warmup-start: "&7Kipirdamadan &e%time%&7 saniye bekle..."
+  teleported: "&aEvine isinlandin!"
+  cancelled-move: "&cHareket ettin, isinlanma iptal edildi."

@@ -1,0 +1,36 @@
+name: SetHome
+version: ${project.version}
+main: com.metox.sethome.SetHomePlugin
+website: https://discord.gg/forges
+api-version: 1.13
+author: chizzar-dev
+description: Ev kaydet ve isinlan, bekleme suresi ve ekranda geri sayim. Coslant.
+
+commands:
+  sethome:
+    description: Bulundugun yeri ev olarak kaydet
+    usage: /sethome [isim]
+    aliases: [evkur, evayarla]
+  home:
+    description: Kayitli evine isinlan
+    usage: /home [isim]
+    aliases: [ev]
+  delhome:
+    description: Bir evini sil
+    usage: /delhome [isim]
+    aliases: [evsil]
+  homes:
+    description: Evlerini listele
+    usage: /homes
+    aliases: [evler]
+
+permissions:
+  sethome.use:
+    description: Ev komutlarini kullanabilir
+    default: true
+  sethome.unlimited:
+    description: Sinirsiz ev kaydedebilir
+    default: false
+  sethome.bypass:
+    description: Bekleme suresi olmadan aninda isinlanir
+    default: false
