@@ -1,7 +1,6 @@
 name: SetHome
 version: ${project.version}
 main: com.metox.sethome.SetHomePlugin
-website: https://discord.gg/forges
 api-version: 1.13
 author: chizzar-dev
 description: Ev kaydet ve isinlan, bekleme suresi ve ekranda geri sayim. Coslant.
